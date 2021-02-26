@@ -1,0 +1,131 @@
+@font-face{
+    font-family: Roboto;
+    src: url("Roboto-Regular.ttf");
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgba(85, 85, 85);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(100, 100, 100);
+    border-radius: 10px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(65, 65, 65);
+}
+
+section{
+    margin-top: 75px;
+}
+
+/* Header */
+.header{
+    position: fixed;
+    width: 100vw;
+    background-color: rgb(75, 75, 75);
+    display:flex;
+    justify-content: space-around;
+}
+
+*{
+    color:rgb(173, 173, 173);
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+}
+
+.page-links{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.page-links li{
+    display: inline-block;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.header h1, .header li, img{
+    cursor: pointer;
+}
+
+.header a{
+    color:white;
+    height:fit-content;
+    padding: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border:none;
+    background-color: rgb(0, 173, 179);
+    border-radius:10px;
+    text-decoration: none;
+}
+
+/* Img and Text */
+img{
+    border-radius: 10px;
+    width:256px;
+    height:256px;
+}
+
+@media(min-width: 700px){
+    .instaimg{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        background-color:  rgb(75, 75, 75);
+        padding: 20px;
+        border-radius: 20px;
+        width:fit-content;
+        margin:auto;
+    }
+
+    .instaimg p{
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 100px;
+        margin-left: 128px;
+        margin-right: 128px;
+    }
+    
+}
+
+footer{
+    position:fixed;
+    background-attachment: scroll;
+    bottom:0pt;
+}
+
+@media(max-width: 700px){
+    .instaimg{
+        text-align: center;
+        background-color:  rgb(75, 75, 75);
+        width: fit-content;
+        padding:20px;
+        border-radius: 20px;
+        margin: auto;
+    }
+
+    .instaimg p{
+        margin-top: 128px;
+        margin-bottom: 128px;
+    }
+}
+
+/*Down Arrow */
+ @keyframes appear{
+    from{
+        transform: scale(0.0);
+    }
+    to{
+        transform: scale(1.0);
+    }
+ }
+
+ .appear{
+     animation: appear 1s infinite;
+ }
